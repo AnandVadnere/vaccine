@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #062367;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #062369;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #e3ad27;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form name= passdata action="Slot Alert COVISHILD.py" method="POST">
+  <div class="container">
+  <center>
+    <h1>Vaccine Slot Buzzer</h1>
+    <p>Please fill in this form to create an appopriate filter.</p>
+    <hr>
+    
+    <label for="pinCode"><b>Pincode</b></label>
+    <input type="text" placeholder="Enter Pincode" name="pin" id="pinc" required><br>
+
+    <label for="Vaccine"><b>Vaccine</b></label>
+    <input type="radio" id="covishield" name="radioVaccine" value="covishield">
+    <label for="covishield">COVISHIELD</label>
+    
+    <input type="radio" id="covaxin" name="radioVaccine" value="covaxin" >
+    <label for="v_Name">COVAXIN</label>
+    
+    <input type="radio" id="Sputnik" name="radioVaccine" value="sputnik v" >
+    <label for="Sputnik">Sputnik V</label><br><br>
+
+    <label for="age"><b>Age Group</b></label>
+    <input type="radio" id="18 & above" name="radioAgegroup" value="19" >
+    <label for="18 & above">18 & Above</label>
+    
+    <input type="radio" id="18-44 only" name="radioAgegroup" value="44" >
+    <label for="18-44 only">18-44 Only</label>
+    
+    <input type="radio" id="45 & Above" name="radioAgegroup" value="46" >
+    <label for="45 & Above">45 & Above</label><br><br>
+    
+    <label for="Fees"><b>Free or Paid</b></label>
+    <input type="radio" id="Free" name="radioFreeorPaid" value="free" >
+    <label for="Free">Free</label>
+    
+    <input type="radio" id="Paid" name="radioFreeorPaid" value="paid" >
+    <label for="Paid">Paid</label><br><br>
+    
+    <label for="Dose"><b>Dose1 or Dose2</b></label>
+    <input type="radio" id="Dose1" name="radioDose1orDose2" value="Dose1" >
+    <label for="Dose1">Dose1</label>
+    
+    <input type="radio" id="Dose2" name="radioDose1orDose2" value="Dose2" >
+    <label for="Dose2">Dose2</label>
+    
+    <hr>
+    
+    <div class="useme">
+     <p> NOTE:<br> 1. After Chicking on Start Checking the system will check for slot avalibility every <b>after 0.25 sec</b>. <br> 2. You Will Hear <b>Small Buzz</b> Sound after Every Check. <br> 3. Once Slot is Found <b>Long Buzzer</b> can be Heared.
+
+    <button type="submit" name= "submit" class="registerbtn">Start Checking</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Visit a Grovernment Official Booking Website <a href="https://www.cowin.gov.in/home">Visit Here</a>.</p>
+  </div>
+  
+  <div class="footer">
+    <center>
+   <p> Developed by Anand Vadnere.<br> Contact Me anand.vadnere1@gmail.com</p>
+   </form>
+
+</body>
+</html>

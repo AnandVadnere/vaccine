@@ -1,4 +1,4 @@
-#!C:\Users\ANAND\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7
+
 import requests
 import json
 from datetime import datetime
@@ -54,7 +54,7 @@ def SlotChecker():
             if (MyAge >= s['min_age_limit'] and s['vaccine'] == VaccineType.upper()) and (s[Dose] > 0 and c[Fee]=='Free'):
                 # we have got an availability
                 for x in range(5):
-                    playsound("C:\\Users\\ANAND\\Downloads\\loud_alarm_clock.mp3")
+                    playsound("loud_alarm_clock.mp3")
   
                 #MsgText = "We have found an availability at "+ c['name'] + " for age " + str(s['min_age_limit']) + "+ and vaccine type "+ s['vaccine'] + ". Current available capacity is " + str(s['available_capacity']) + " Do you want to book now ?"
                 #UserInput = easygui.ynbox(MsgText, 'Cowin Slot Finder (Author: Anand Vadnere)', ('Yes', 'No'))
@@ -70,6 +70,6 @@ while(True):
     SlotChecker()
     print("Last checked at %s " % (str(datetime.now().time()),))
     print("We'll check again in %s minute(s)" % (CheckAfter,))
-    playsound("C:\\Users\\ANAND\\Downloads\\notification (1).mp3")
+    playsound("notification (1).mp3")
     time.sleep(CheckAfter*60)
 
